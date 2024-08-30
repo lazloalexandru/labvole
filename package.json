@@ -1,10 +1,12 @@
 {
   "name": "labvole",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "src/server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node src/server/server.js",
+    "build": "mkdir -p dist && cp -R src/public/* dist/ && cp src/server/server.js dist/",
+    "deploy": "src/scripts/deploy.bat"
   },
   "keywords": [],
   "author": "",

@@ -15,10 +15,11 @@ jobs:
       with:
         node-version: '14.x'
     - run: npm ci
-    - run: npm run build --if-present
+    - run: npm run build
     - run: npm test
     - name: Deploy to test environment
       run: |
+        # The build script in package.json now handles copying files to dist
         # Add your deployment steps here for the test environment
         # This might be similar to the production deployment,
         # but targeting a different server or environment

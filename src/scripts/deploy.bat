@@ -12,6 +12,6 @@ if "%ERRORLEVEL%"=="0" (
 
 REM Start the server
 echo Starting server...
-start /B node dist/server.js
+start /B node ../dist/server.js
 
 echo Deployment complete. Server is running.
